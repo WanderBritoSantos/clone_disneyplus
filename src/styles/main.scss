@@ -1,4 +1,56 @@
-$bgColor:rgb(67, 55, 240);
-body{
-    background-color: $bgColor;
+@use 'variable';
+@use './hero';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+body{
+    background-color:variable.$corDeFundo;
+}
+
+@mixin text($fontSize:16px){
+    font-size: $fontSize;
+    line-height: $fontSize+(10px);
+    color:variable.$corTextPrincipal;
+}
+
+@mixin title($fontSize:28px){
+    @include text($fontSize);
+    color:variable.$corTextSecundario;
+}
+
+.text--big{
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.link-text{
+    @include text(18px);
+    color: variable.$corTextSecundario;
+    text-decoration: underline;
+}
+
+
+.title--big{
+    @include title;
+}
+
+.title{
+    @include title(40px);
+}
+
+.title--small{
+    @include title(28px);
+}
+
