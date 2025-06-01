@@ -1,5 +1,6 @@
 @use 'variable';
 @use './hero';
+@use 'shows';
 
 //importar fonts 
 @font-face{
@@ -16,13 +17,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     border: none;
+    font-family: Avenir,sans-serif;
+    border: none;
 }
 
 
 body{
     background-color:variable.$corDeFundo;
-    font-family: Avenir,sans-serif;
 }
 
 @mixin text($fontSize:16px){
