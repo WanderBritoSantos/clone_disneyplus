@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="../dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img  class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="" class="button button--secondary">Assine agora</a>
+                </li>
+                 <li class="header__links__item">
+                    <a href="" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
      <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -28,13 +43,11 @@
                     <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 49,90/mês*</span>
                 </li>
-
                   <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt=" Disney+ - star+ - combo+">
                     <button class="button">ASSINE AGORA</button>
                     <span class="text">R$ 49,90/mês</span>
-                </li>
-                
+                </li>   
             </ul>
             <p class="text--small">
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
@@ -94,7 +107,6 @@
                 <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem limites">
             </li>
         </ul>
-
         <ul data-tab-id="star_plus" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./dist/images/fundo_rei_leao.png" alt="Desencantada">
@@ -116,7 +128,6 @@
             </li>
         </ul>
      </section>
-
     <section class="plans">
         <h2 class="title--big">Escolha seu plano </h2>
         <ul class="plans__list">
@@ -146,11 +157,160 @@
                 <button class="button">Assine agora</button>
             </li>
         </ul>
-        <p class="text--samll">
+        <p class="text--small">
             *Opreço pode variar caso a assinatuara seja feita através de outras plataformas.
         </p>
     </section>
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagens com TV, Computer, tablet e celular">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Assista do seu jeito</h2>
+            <p class="text--big">
+                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos.Nossa seleção do títulos em 4k não para de crescer. Além disso, felicidade de todos, é possível asistir em  até 4 telas ao mesmo tempo.
+            </p>
+        </div>
+    </section>
+       <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width:768px )" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
 
+        </picture>
+        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <h2 class="title">Baixe filmes e séries</h2>
+            <p class="text--big">
+                Baixe e assista quando e onde quiser.Assim, seus favoritos estão sempre co vocẽ,até mesmo sem internet.
+            </p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOs</li>7
+                    <li>PC Windows</li>
+                </ul>
+            </li>
+             <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="TV">
+                <h4 class="title--small">TV</h4>
+                <ul class="text">
+                    <li>Amazon fire TV</li>
+                    <li>Android TV</li>7
+                    <li>Apple TV</li>
+                    <li>Chromecast</li>
+                    <li>TVs LG</li>
+                     <li>Roku</li>
+                      <li>Samsug</li>
+                </ul>
+            </li>
+             <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Video games ">
+                <h4 class="title--small">Video games</h4>
+                <ul class="text">
+                    <li>PS4</li>
+                    <li>PS5</li>7
+                    <li>Xbox One</li>
+                    <li>Xbox Series X</li>
+                    <li>Xbox Series S/li>
+                </ul>
+            </li>
+             <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Celules e tablets">
+                <h4 class="title--small">Celulares e tablet</h4>
+                <ul class="text">
+                    <li>Tablets Amazon Fire</li>
+                    <li>Celulares e Tablets Android</li>7
+                    <li>iPhone e iPad</li>
+                </ul>
+            </li>
+        </ul>
+        
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas frequentes</h2>
+            <ul class="faq__questions">
+                <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--big">
+                        Aresposta da pergunta
+                    </div>
+                </li>
+                  <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--big">
+                        Aresposta da pergunta
+                    </div>
+                </li>
+                  <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--big">
+                        Aresposta da pergunta
+                    </div>
+                </li>
+                  <li class="faq__questions__item">
+                    <div class="faq__questions__item__question" data-faq-question>
+                        Pergunta?
+                    </div>
+                    <div class="faq__questions__item__answer text--big">
+                        Aresposta da pergunta
+                    </div>
+                </li>
+            </ul>
+    </section>
+
+     <footer class="footer">
+       <div class="footer__container">
+         <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+               <div class="laguage-selector">
+                   <img src="./dist/images/icones/globe.svg " alt="Globo do mundo">
+                   <select name="" id="">
+                      <option value="">English</option>
+                      <option value="" selected>Português</option>
+                   </select>
+               </div>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Termos e Condições de Uso</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Política de privacidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Anúncios personaliados</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Dispositivos compatíveis</a>
+            </li>
+             <li class="footer__links__item">
+                <a href="#" class="text--small">Ajuda</a>
+            </li> 
+            <li class="footer__links__item">
+                <a href="#" class="text--small"> Sobre a Disney </a>
+            </li>
+        </ul>
+        <p class="text--small">
+            @2022 Disney, Disney+ e The walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+        </p>
+        <p class="text--small">
+            O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+        </p></div>
+     </footer>
      <script src="./src/main.js"></script>
 </body>
 </html>
